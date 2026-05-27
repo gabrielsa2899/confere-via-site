@@ -1,108 +1,110 @@
 const whatsappLink = "https://wa.me/5518981601801";
 
-const pillars = [
+const pilares = [
   {
-    icon: "✓",
-    title: "Análise prévia",
-    text: "Cada oportunidade é avaliada antes de avançar, com foco em viabilidade, coerência e segurança.",
+    numero: "01",
+    titulo: "Análise antes da compra",
+    texto: "Avaliamos se a oportunidade faz sentido antes de qualquer avanço.",
   },
   {
-    icon: "◼",
-    title: "Operação organizada",
-    text: "A compra assistida é conduzida com mais clareza, critério e acompanhamento profissional.",
+    numero: "02",
+    titulo: "Processo documentado",
+    texto: "As etapas importantes são registradas para dar mais clareza à operação.",
   },
   {
-    icon: "▣",
-    title: "Conferência documental",
-    text: "Informações, evidências e etapas relevantes são registradas conforme a necessidade de cada pedido.",
+    numero: "03",
+    titulo: "Critério operacional",
+    texto: "Cada pedido é tratado conforme valor, risco, origem e viabilidade.",
   },
   {
-    icon: "→",
-    title: "Acompanhamento até a conclusão",
-    text: "Do primeiro contato à entrega, a operação é conduzida com mais previsibilidade e controle.",
-  },
-];
-
-const steps = [
-  {
-    number: "01",
-    title: "Você nos apresenta a demanda.",
-    text: "Produto, referência e contexto da compra são avaliados com atenção.",
-  },
-  {
-    number: "02",
-    title: "A Confere analisa viabilidade e risco.",
-    text: "Nem toda oportunidade compensa. Nosso papel é filtrar o que faz sentido.",
-  },
-  {
-    number: "03",
-    title: "A operação é estruturada.",
-    text: "Organizamos a condução do pedido de forma mais segura, clara e profissional.",
-  },
-  {
-    number: "04",
-    title: "A conferência é registrada.",
-    text: "As validações relevantes são documentadas conforme o perfil da operação.",
-  },
-  {
-    number: "05",
-    title: "O cliente acompanha a conclusão.",
-    text: "A compra segue com mais previsibilidade, comunicação e respaldo.",
-  },
-  {
-    number: "06",
-    title: "Decisão com mais confiança.",
-    text: "Nosso objetivo é reduzir incertezas antes e durante a compra.",
+    numero: "04",
+    titulo: "Decisão mais segura",
+    texto: "Quando não compensa, a recomendação pode ser simplesmente não comprar.",
   },
 ];
 
-const securityItems = [
-  "A Confere atua com análise prévia e não incentiva operações sem lógica econômica ou operacional.",
-  "Pedidos sensíveis ou de maior valor exigem critério adicional e documentação proporcional.",
-  "Produtos sem procedência clara, de origem duvidosa ou incompatíveis com a política da empresa não seguem.",
-  "A operação é tratada com foco em organização, rastreabilidade e redução de exposição para todas as partes.",
-  "Cada pedido é analisado individualmente, sem promessas genéricas ou irreais.",
-  "Quando a compra não compensa, a recomendação pode ser simplesmente não prosseguir.",
+const passos = [
+  {
+    numero: "01",
+    titulo: "Você envia a demanda",
+    texto: "Produto, referência, valor aproximado e contexto da compra.",
+  },
+  {
+    numero: "02",
+    titulo: "A Confere analisa",
+    texto: "Verificamos se a compra parece viável, segura e coerente.",
+  },
+  {
+    numero: "03",
+    titulo: "Organizamos a operação",
+    texto: "Estruturamos o caminho mais adequado para conduzir o pedido.",
+  },
+  {
+    numero: "04",
+    titulo: "Registramos evidências",
+    texto: "As informações relevantes são documentadas conforme a necessidade.",
+  },
+  {
+    numero: "05",
+    titulo: "Você aprova ou recusa",
+    texto: "O cliente decide com base no custo final e no nível de segurança.",
+  },
+  {
+    numero: "06",
+    titulo: "Acompanhamento final",
+    texto: "A operação segue com comunicação, registro e controle até a conclusão.",
+  },
 ];
 
-const partnerCards = [
+const seguranca = [
+  "A Confere não promete preço baixo a qualquer custo.",
+  "Produtos de origem duvidosa, falsificados ou irregulares não são aceitos.",
+  "Pedidos de maior valor exigem análise e documentação reforçada.",
+  "Cada operação é avaliada individualmente, sem promessas genéricas.",
+  "A comunicação deve ocorrer pelos canais oficiais da Confere.",
+  "Quando a operação não fizer sentido, a recomendação será não avançar.",
+];
+
+const parceiros = [
   {
-    icon: "◻",
-    title: "Lojas e fornecedores",
-    text: "Buscamos relações comerciais sérias, com comunicação objetiva, clareza nas informações e postura profissional.",
+    titulo: "Lojas e fornecedores",
+    texto: "Relações comerciais sérias, com clareza de informação e postura profissional.",
   },
   {
-    icon: "◎",
-    title: "Operadores parceiros",
-    text: "Pessoas e apoios operacionais que atuem com responsabilidade, discrição e padrão confiável de execução.",
+    titulo: "Operadores parceiros",
+    texto: "Apoio local ou operacional para demandas específicas, sempre com critério.",
   },
   {
-    icon: "▵",
-    title: "Rede de apoio logístico",
-    text: "Estruturas de apoio que contribuam para uma operação mais organizada, previsível e bem documentada.",
+    titulo: "Rede de apoio",
+    texto: "Estrutura para tornar o processo mais organizado, previsível e documentado.",
   },
 ];
 
-const faqs = [
+const perguntas = [
   {
-    q: "A Confere vende produtos diretamente?",
-    a: "Não. A Confere atua como estrutura de compra assistida, análise e organização operacional.",
+    pergunta: "A Confere vende produtos diretamente?",
+    resposta:
+      "Não. A Confere atua como estrutura de compra assistida, análise e organização operacional.",
   },
   {
-    q: "A Confere garante que toda compra será mais barata?",
-    a: "Não. O compromisso da Confere não é prometer preço baixo a qualquer custo, e sim avaliar se a operação faz sentido. Em alguns casos, a melhor decisão é não comprar.",
+    pergunta: "A Confere garante que sempre será mais barato?",
+    resposta:
+      "Não. Nosso foco é avaliar se a compra compensa com segurança. Em alguns casos, a melhor decisão é não comprar.",
   },
   {
-    q: "Todo pedido pode ser atendido?",
-    a: "Não. Cada demanda passa por análise de viabilidade, origem, nível de risco, custo total e coerência operacional.",
+    pergunta: "Todo pedido pode ser atendido?",
+    resposta:
+      "Não. Cada demanda passa por análise de viabilidade, custo total, origem, risco e coerência operacional.",
   },
   {
-    q: "A Confere atende compras internacionais?",
-    a: "Quando houver lógica econômica e operacional, sim. Compras internacionais são avaliadas caso a caso, sempre com foco em viabilidade e segurança.",
+    pergunta: "A Confere trabalha com compras internacionais?",
+    resposta:
+      "Sim, quando houver viabilidade. Demandas ligadas a compras internacionais são analisadas caso a caso.",
   },
   {
-    q: "Como posso pedir uma análise ou cotação?",
-    a: "Basta entrar em contato pelo WhatsApp e apresentar o produto ou a demanda. A Confere faz uma avaliação inicial antes de qualquer avanço.",
+    pergunta: "Como peço uma cotação?",
+    resposta:
+      "Basta enviar a demanda pelo WhatsApp. A Confere faz uma análise inicial antes de qualquer avanço.",
   },
 ];
 
@@ -110,8 +112,8 @@ function App() {
   return (
     <div className="site">
       <header className="header">
-        <div className="header-inner">
-          <a href="#top" className="logo">
+        <div className="headerContent">
+          <a className="brand" href="#inicio">
             Confere
           </a>
 
@@ -122,97 +124,96 @@ function App() {
             <a href="#cotacao">Cotação</a>
           </nav>
 
-          <div className="header-actions">
-            <a href={whatsappLink} target="_blank" rel="noreferrer">
-              <button className="whatsapp-btn">Falar no WhatsApp</button>
-            </a>
-          </div>
+          <a href={whatsappLink} target="_blank" rel="noreferrer">
+            <button className="headerButton">Falar no WhatsApp</button>
+          </a>
         </div>
       </header>
 
       <main>
-        <section className="hero" id="top">
-          <div className="hero-content">
-            <div className="badge">CONFERE VIA — COMPRA ASSISTIDA SEGURA</div>
+        <section className="hero" id="inicio">
+          <div className="heroInner">
+            <span className="eyebrow">CONFERE VIA — COMPRA ASSISTIDA SEGURA</span>
 
             <h1>Compre de longe com tudo conferido.</h1>
 
             <p>
-              A Confere conecta clientes a oportunidades de compra com mais
-              segurança, organização e análise profissional, reduzindo
-              incertezas antes da decisão.
+              A Confere ajuda clientes a analisarem oportunidades de compra com
+              mais segurança, organização e critério antes da decisão.
             </p>
 
-            <div className="hero-actions">
+            <div className="heroButtons">
               <a href={whatsappLink} target="_blank" rel="noreferrer">
-                <button className="primary-btn">Pedir cotação</button>
+                <button className="primaryButton">Pedir cotação</button>
               </a>
 
-              <a href={whatsappLink} target="_blank" rel="noreferrer">
-                <button className="secondary-btn">Ser parceiro</button>
+              <a href="#parceiros">
+                <button className="secondaryButton">Ser parceiro</button>
               </a>
             </div>
 
-            <div className="hero-note">
-              O caminho mais seguro entre a oportunidade e a decisão.
-            </div>
+            <small>O caminho seguro entre a oportunidade e a decisão.</small>
           </div>
         </section>
 
-        <section className="section section-light">
+        <section className="section light">
           <div className="container">
-            <div className="section-header">
-              <h2>Nossos pilares</h2>
+            <div className="sectionTitle">
+              <span>Nossos pilares</span>
+              <h2>Uma compra melhor começa antes do pagamento.</h2>
               <p>
-                Uma estrutura pensada para dar mais critério, clareza e
-                tranquilidade à compra.
+                A Confere existe para reduzir incertezas, organizar informações
+                e dar mais clareza para quem quer comprar com segurança.
               </p>
             </div>
 
-            <div className="grid-4">
-              {pillars.map((item) => (
-                <div className="card" key={item.title}>
-                  <div className="card-icon">{item.icon}</div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
+            <div className="grid four">
+              {pilares.map((item) => (
+                <article className="pillarCard" key={item.numero}>
+                  <span>{item.numero}</span>
+                  <h3>{item.titulo}</h3>
+                  <p>{item.texto}</p>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
         <section className="section">
-          <div className="container">
-            <div className="problem">
+          <div className="container narrow">
+            <div className="statement">
+              <span>O desafio</span>
               <h2>
-                Comprar de longe pode ser uma ótima oportunidade. O problema é
-                decidir sem segurança.
+                Nem toda oferta boa é uma boa compra.
               </h2>
               <p>
-                Muitas compras parecem vantajosas à primeira vista, mas se
-                tornam arriscadas quando faltam critério, contexto e análise.
-                A Confere nasce para reduzir essa zona de incerteza.
+                Comprar à distância pode abrir oportunidades, mas também aumenta
+                riscos: produto errado, preço incompleto, falta de comprovação,
+                envio incerto ou negociação informal. A Confere entra para
+                analisar antes, organizar durante e reduzir problemas depois.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="section section-light" id="como-funciona">
+        <section className="section light" id="como-funciona">
           <div className="container">
-            <div className="section-header">
-              <h2>Como funciona</h2>
+            <div className="sectionTitle">
+              <span>Como funciona</span>
+              <h2>Simples para o cliente. Criterioso por trás.</h2>
               <p>
-                Um processo simples na apresentação, mas criterioso na execução.
+                O processo foi pensado para manter a experiência objetiva, mas
+                com uma operação mais segura e documentada.
               </p>
             </div>
 
-            <div className="grid-3">
-              {steps.map((step) => (
-                <div className="step-card" key={step.number}>
-                  <div className="step-number">{step.number}</div>
-                  <strong>{step.title}</strong>
-                  <p>{step.text}</p>
-                </div>
+            <div className="grid three">
+              {passos.map((item) => (
+                <article className="stepCard" key={item.numero}>
+                  <strong>{item.numero}</strong>
+                  <h3>{item.titulo}</h3>
+                  <p>{item.texto}</p>
+                </article>
               ))}
             </div>
           </div>
@@ -220,33 +221,36 @@ function App() {
 
         <section className="section" id="seguranca">
           <div className="container">
-            <div className="section-header">
-              <h2>Segurança por critério, não por promessa.</h2>
+            <div className="sectionTitle left">
+              <span>Segurança</span>
+              <h2>Segurança por processo, não por promessa.</h2>
               <p>
-                Nosso papel é proteger a qualidade da decisão e a consistência
-                da operação.
+                Nosso objetivo é proteger a qualidade da decisão e a consistência
+                da operação, sem vender ilusão.
               </p>
             </div>
 
-            <div className="security-list">
-              {securityItems.map((item, index) => (
-                <div className="security-item" key={index}>
+            <div className="securityGrid">
+              {seguranca.map((item) => (
+                <div className="securityItem" key={item}>
                   <div className="check">✓</div>
-                  <div>{item}</div>
+                  <p>{item}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="section section-light">
-          <div className="container">
-            <div className="section-header">
-              <h2>Compras internacionais, quando fizer sentido.</h2>
+        <section className="section light">
+          <div className="container narrow">
+            <div className="statement">
+              <span>Compras internacionais</span>
+              <h2>Internacional, somente quando fizer sentido.</h2>
               <p>
-                A Confere também pode avaliar demandas ligadas a compras
-                internacionais, sempre com análise prévia de viabilidade, custo
-                total e coerência operacional.
+                A Confere também pode analisar demandas envolvendo compras fora
+                do Brasil. O foco não é expor o método da operação, mas avaliar
+                se o custo total, o risco e a logística tornam a compra
+                realmente viável para o cliente.
               </p>
             </div>
           </div>
@@ -254,52 +258,56 @@ function App() {
 
         <section className="section" id="parceiros">
           <div className="container">
-            <div className="section-header">
-              <h2>Rede Confere</h2>
+            <div className="sectionTitle">
+              <span>Parceiros</span>
+              <h2>Uma rede construída com seriedade.</h2>
               <p>
-                Construímos relações com parceiros que valorizam seriedade,
-                consistência e visão de longo prazo.
+                Buscamos relações com pessoas, lojas e apoios operacionais que
+                valorizem confiança, clareza e visão de longo prazo.
               </p>
             </div>
 
-            <div className="grid-3">
-              {partnerCards.map((item) => (
-                <div className="card" key={item.title}>
-                  <div className="card-icon">{item.icon}</div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
+            <div className="grid three">
+              {parceiros.map((item) => (
+                <article className="partnerCard" key={item.titulo}>
+                  <div className="dot"></div>
+                  <h3>{item.titulo}</h3>
+                  <p>{item.texto}</p>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="cta-dark" id="cotacao">
-          <div className="container">
-            <h2>Tem uma oportunidade de compra e quer analisá-la com mais segurança?</h2>
+        <section className="cta" id="cotacao">
+          <div className="container narrow">
+            <span>Cotação</span>
+            <h2>Tem uma oportunidade de compra?</h2>
             <p>
-              Envie sua demanda. A Confere faz uma avaliação inicial e indica se
-              vale a pena avançar.
+              Envie sua demanda. A Confere faz uma avaliação inicial e informa
+              se vale a pena avançar.
             </p>
+
             <a href={whatsappLink} target="_blank" rel="noreferrer">
-              <button className="secondary-btn">Chamar no WhatsApp</button>
+              <button className="lightButton">Chamar no WhatsApp</button>
             </a>
           </div>
         </section>
 
         <section className="section">
-          <div className="container">
-            <div className="section-header">
+          <div className="container narrow">
+            <div className="sectionTitle">
+              <span>Dúvidas</span>
               <h2>Perguntas frequentes</h2>
-              <p>Respostas objetivas para as dúvidas mais comuns.</p>
+              <p>Respostas objetivas sobre como a Confere funciona.</p>
             </div>
 
             <div className="faq">
-              {faqs.map((item) => (
-                <div className="faq-item" key={item.q}>
-                  <div className="faq-question">{item.q}</div>
-                  <div className="faq-answer">{item.a}</div>
-                </div>
+              {perguntas.map((item) => (
+                <details key={item.pergunta}>
+                  <summary>{item.pergunta}</summary>
+                  <p>{item.resposta}</p>
+                </details>
               ))}
             </div>
           </div>
@@ -307,34 +315,32 @@ function App() {
       </main>
 
       <footer className="footer">
-        <div className="footer-grid">
+        <div className="footerContent">
           <div>
             <h3>Confere</h3>
-            <p>
-              Compra assistida com mais critério, segurança e organização.
-            </p>
+            <p>Compra assistida com mais critério, segurança e organização.</p>
           </div>
 
           <div>
-            <h3>Contato</h3>
+            <h4>Contato</h4>
             <p>WhatsApp: (18) 98160-1801</p>
             <p>Site: conferevia.com.br</p>
           </div>
 
           <div>
-            <h3>Navegação</h3>
-            <p><a href="#como-funciona">Como funciona</a></p>
-            <p><a href="#seguranca">Segurança</a></p>
-            <p><a href="#parceiros">Parceiros</a></p>
-            <p><a href="#cotacao">Cotação</a></p>
+            <h4>Navegação</h4>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#seguranca">Segurança</a>
+            <a href="#parceiros">Parceiros</a>
+            <a href="#cotacao">Cotação</a>
           </div>
         </div>
 
-        <small>
+        <div className="legal">
           A Confere atua como estrutura de compra assistida e análise
-          operacional. Cada demanda é avaliada individualmente, de acordo com
+          operacional. Cada demanda é avaliada individualmente, conforme
           contexto, viabilidade e nível de risco.
-        </small>
+        </div>
       </footer>
     </div>
   );
