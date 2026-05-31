@@ -818,5 +818,214 @@ button {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    /* AJUSTE FINO FINAL — HERO E RESPONSIVIDADE */
+
+.hero {
+  min-height: calc(100vh - 96px);
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.hero-content {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.95;
+  letter-spacing: -0.075em;
+}
+
+.hero .lead {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .support-text {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-actions {
+  margin-top: 34px;
+}
+
+/* Seções mais equilibradas */
+.section {
+  padding: 96px 0;
+}
+
+.section-header {
+  margin-bottom: 54px;
+}
+
+.cards-grid {
+  gap: 22px;
+}
+
+.card {
+  min-height: 220px;
+}
+
+/* Header mais premium */
+.site-header {
+  height: 92px;
+}
+
+.nav-inner {
+  min-height: 92px;
+}
+
+.brand-mark {
+  width: 48px;
+  height: 48px;
+}
+
+.brand-name {
+  letter-spacing: -0.04em;
+}
+
+/* Ajustes para notebook */
+@media (max-width: 1280px) {
+  .hero h1 {
+    font-size: clamp(4.8rem, 9vw, 8.4rem);
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .site-header {
+    height: auto;
+  }
+
+  .nav-inner {
+    min-height: auto;
+    padding: 18px 20px;
+    gap: 18px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 92px;
+    padding-bottom: 72px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.8rem, 13vw, 6.5rem);
+    line-height: 0.96;
+    letter-spacing: -0.065em;
+  }
+
+  .hero .lead {
+    font-size: 1.35rem;
+    line-height: 1.45;
+  }
+
+  .hero .support-text {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 76px 0;
+  }
+
+  .section-title {
+    font-size: clamp(2.8rem, 10vw, 4.8rem);
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+}
+
+/* Celular */
+@media (max-width: 560px) {
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-name {
+    font-size: 1.75rem;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 72px;
+    padding-bottom: 64px;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.24em;
+    padding: 10px 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.3rem, 17vw, 5.1rem);
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+  }
+
+  .hero .lead {
+    font-size: 1.16rem;
+  }
+
+  .hero .support-text {
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+
+  .section-title {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+    line-height: 1;
+  }
+
+  .section-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .card {
+    padding: 28px;
+    border-radius: 24px;
+  }
+
+  .card h3 {
+    font-size: 1.45rem;
+  }
+}
   }
 }
