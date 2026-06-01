@@ -888,3 +888,443 @@ p,
     font-size: 15px;
   }
 }
+/* =========================================================
+   CORREÇÃO FINAL DE LAYOUT — CONFERE
+   Cola este bloco no FINAL do index.css
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 10% 30%, rgba(15, 42, 68, 0.045), transparent 28%),
+    radial-gradient(circle at 90% 40%, rgba(15, 42, 68, 0.04), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #101418;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+
+header,
+.site-header,
+.header,
+.navbar {
+  width: 100%;
+  height: 92px;
+  padding: 0 7vw;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 32px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo,
+.brand,
+.header-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #0b1f33;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.logo-icon,
+.brand-icon,
+.mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 42, 68, 0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b1f33;
+  font-size: 24px;
+  font-weight: 500;
+  background: #ffffff;
+}
+
+nav,
+.nav,
+.menu {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 38px;
+}
+
+nav a,
+.nav a,
+.menu a {
+  color: #2f3a48;
+  text-decoration: none;
+  font-size: 15.5px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  transition: 0.2s ease;
+}
+
+nav a:hover,
+.nav a:hover,
+.menu a:hover {
+  color: #07111f;
+}
+
+/* BOTÕES GERAIS */
+
+a[href*="wa.me"],
+button,
+.btn,
+.button,
+.cta,
+.primary-button,
+.secondary-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 14px;
+  font-size: 15.5px;
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+header a[href*="wa.me"],
+.site-header a[href*="wa.me"],
+.header a[href*="wa.me"] {
+  background: #101418 !important;
+  color: #ffffff !important;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+}
+
+header a[href*="wa.me"]:hover,
+.site-header a[href*="wa.me"]:hover,
+.header a[href*="wa.me"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.18);
+}
+
+/* HERO */
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+section:first-of-type,
+.hero,
+.hero-section {
+  min-height: calc(100vh - 92px);
+  width: 100%;
+  padding: 120px 7vw 96px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 28px !important;
+}
+
+/* força o conteúdo do hero a não virar colunas */
+section:first-of-type > *,
+.hero > *,
+.hero-section > * {
+  max-width: 1120px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* selo */
+.eyebrow,
+.badge,
+.pill,
+section:first-of-type small,
+section:first-of-type .tag {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 13px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 42, 68, 0.16);
+  background: rgba(255, 255, 255, 0.72);
+  color: #0b1f33;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  box-shadow: 0 16px 50px rgba(15, 23, 42, 0.06);
+}
+
+/* título principal */
+h1 {
+  margin: 22px auto 0 !important;
+  max-width: 1120px;
+  font-size: clamp(58px, 9vw, 132px) !important;
+  line-height: 0.88 !important;
+  letter-spacing: -0.085em !important;
+  font-weight: 900 !important;
+  color: #101418;
+  text-align: center !important;
+}
+
+/* subtítulo */
+h1 + p {
+  max-width: 920px !important;
+  margin: 22px auto 0 !important;
+  color: #11263b;
+  font-size: clamp(22px, 2.4vw, 34px) !important;
+  line-height: 1.38 !important;
+  letter-spacing: -0.035em;
+  text-align: center !important;
+}
+
+/* texto complementar */
+h1 + p + p {
+  max-width: 780px !important;
+  margin: 22px auto 0 !important;
+  color: #5d6b7c;
+  font-size: clamp(16px, 1.4vw, 20px) !important;
+  line-height: 1.65 !important;
+  letter-spacing: -0.015em;
+  text-align: center !important;
+}
+
+/* botões do hero */
+.hero-actions,
+.actions,
+.cta-row,
+section:first-of-type div:has(a) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+  flex-wrap: wrap;
+  margin-top: 26px !important;
+}
+
+section:first-of-type a,
+.hero a,
+.hero-section a {
+  min-width: 210px;
+  border-radius: 14px;
+}
+
+section:first-of-type a:first-of-type,
+.hero a:first-of-type,
+.hero-section a:first-of-type {
+  background: #101418 !important;
+  color: #ffffff !important;
+  border: 1px solid #101418 !important;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+}
+
+section:first-of-type a:nth-of-type(2),
+.hero a:nth-of-type(2),
+.hero-section a:nth-of-type(2) {
+  background: #ffffff !important;
+  color: #101418 !important;
+  border: 1px solid rgba(15, 23, 42, 0.12) !important;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+/* SEÇÕES */
+
+section:not(:first-of-type) {
+  padding: 110px 7vw;
+}
+
+section:not(:first-of-type) h2 {
+  max-width: 940px;
+  margin: 0 auto 22px;
+  text-align: center;
+  font-size: clamp(42px, 5.5vw, 82px);
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+  color: #101418;
+}
+
+section:not(:first-of-type) h2 + p {
+  max-width: 760px;
+  margin: 0 auto 64px;
+  text-align: center;
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: 1.55;
+  color: #5d6b7c;
+}
+
+/* cards */
+.card,
+.cards > *,
+.grid > *,
+article {
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  background: rgba(255, 255, 255, 0.84);
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.055);
+}
+
+/* grids comuns */
+.cards,
+.grid,
+.services-grid,
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* conteúdo dos cards */
+.card,
+.cards > *,
+.grid > *,
+article {
+  padding: 34px;
+}
+
+.card h3,
+.cards h3,
+.grid h3,
+article h3 {
+  margin: 0 0 16px;
+  color: #101418;
+  font-size: 25px;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.card p,
+.cards p,
+.grid p,
+article p,
+li {
+  color: #5d6b7c;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* footer */
+footer {
+  padding: 56px 7vw;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  background: #ffffff;
+  color: #5d6b7c;
+}
+
+footer a {
+  color: #334155;
+  text-decoration: none;
+  margin-right: 22px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 980px) {
+  header,
+  .site-header,
+  .header,
+  .navbar {
+    height: auto;
+    padding: 22px 24px;
+    flex-wrap: wrap;
+  }
+
+  nav,
+  .nav,
+  .menu {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start !important;
+    gap: 20px;
+    overflow-x: auto;
+    padding-top: 8px;
+  }
+
+  section:first-of-type,
+  .hero,
+  .hero-section {
+    min-height: auto;
+    padding: 96px 24px 78px !important;
+  }
+
+  h1 {
+    font-size: clamp(54px, 15vw, 92px) !important;
+    line-height: 0.9 !important;
+  }
+
+  .cards,
+  .grid,
+  .services-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section:not(:first-of-type) {
+    padding: 82px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .logo,
+  .brand,
+  .header-brand {
+    font-size: 24px;
+  }
+
+  .logo-icon,
+  .brand-icon,
+  .mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  header a[href*="wa.me"],
+  .site-header a[href*="wa.me"],
+  .header a[href*="wa.me"] {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(48px, 18vw, 76px) !important;
+  }
+
+  h1 + p {
+    font-size: 21px !important;
+  }
+
+  h1 + p + p {
+    font-size: 16px !important;
+  }
+
+  section:first-of-type a,
+  .hero a,
+  .hero-section a {
+    width: 100%;
+  }
+}
